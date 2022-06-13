@@ -36,7 +36,7 @@ export default class MarsRover {
 
       if (comando === "l") {
         // Left
-        direcaoNumerica = (direcaoNumerica + 4 - 1) % 4;
+        direcaoNumerica = (direcaoNumerica + 3) % 4;
       } else {
         // Right
         direcaoNumerica = (direcaoNumerica + 1) % 4;
@@ -83,6 +83,6 @@ export default class MarsRover {
   }
 }
 
-const robo = new MarsRover([3, 3], "L", [5, 5]);
-robo.executarComandos("MMRMMRMRRM");
+const robo = new MarsRover([1, 2], "n", [5, 5]);
+robo.executarComandos("LMLMLMLMM");
 
