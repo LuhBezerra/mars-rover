@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "jest",
+    "test-cucumber": "cucumber-js",
+    "test-jest": "jest",
     "start": "node src/index.js"
   },
   "author": "Luh Bezerra",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
+    "@cucumber/cucumber": "^8.3.0",
     "babel-jest": "^28.1.1",
     "jest": "^28.1.1"
   }
