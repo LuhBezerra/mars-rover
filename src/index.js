@@ -1,4 +1,4 @@
-export default class MarsRover {
+class MarsRover {
   constructor(
     posicaoInicial = [0, 0],
     direcaoInicial = "n",
@@ -74,11 +74,14 @@ export default class MarsRover {
 
       this.getDirecao = direcao;
       this.getPosicao = posicao;
-      this.getTest = posicao;
 
       console.log(
-        `${this.getPosicao[0]} ${this.getPosicao[1]} ${this.getDirecao.toLocaleUpperCase()}`
+        `${this.getPosicao[0]} ${
+          this.getPosicao[1]
+        } ${this.getDirecao.toLocaleUpperCase()}`
       );
+
+      return { direcao, posicao };
     };
   }
 }
@@ -86,3 +89,4 @@ export default class MarsRover {
 const robo = new MarsRover([1, 2], "n", [5, 5]);
 robo.executarComandos("LMLMLMLMM");
 
+module.exports = MarsRover;
